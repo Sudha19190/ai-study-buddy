@@ -1,17 +1,4 @@
-"""
-AI Study Buddy — Instant Lesson & Quiz Generator
---------------------------------------------------
-Takes a topic + grade level from the user, calls the Gemini API,
-and returns a short lesson summary plus a 5-question multiple-choice quiz.
 
-Run:
-    1. pip install flask requests
-    2. Get a free Gemini API key: https://aistudio.google.com/app/apikey
-    3. set GEMINI_API_KEY=your_key_here   (Windows)
-       export GEMINI_API_KEY=your_key_here  (Mac/Linux)
-    4. python app.py
-    5. Open http://127.0.0.1:5000
-"""
 
 import os
 import json
