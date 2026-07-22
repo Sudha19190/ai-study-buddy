@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>AI Study Buddy</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <div class="container">
+    <h1>📚 AI Study Buddy</h1>
+    <p class="subtitle">Turn any topic into a lesson + quiz, instantly.</p>
+
+    <div class="form-row">
+      <input id="topic" type="text" placeholder="Enter a topic (e.g. Photosynthesis, Recursion, French Revolution)" />
+      <select id="grade">
+        <option value="middle school">Middle School</option>
+        <option value="high school" selected>High School</option>
+        <option value="undergraduate">Undergraduate</option>
+      </select>
+      <button id="generateBtn">Generate</button>
+    </div>
+
+    <div id="status"></div>
+
+    <div id="results" class="hidden">
+      <h2>Lesson Summary</h2>
+      <ul id="lessonList"></ul>
+
+      <h2>Quiz</h2>
+      <div id="quizContainer"></div>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
